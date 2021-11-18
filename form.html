@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo/camping.png">
+    <script src="form.js" charset="utf-8"></script>
+    
+    <title>Ejercicio Simulacro Felippo</title>
+  </head>
+  <body>
+    <header>
+      <div class="barra">
+       <a href="index.html"><img class ="logo" src="img/logo/camping.png" alt=""></a> 
+       <a href="index.html"><h1 class="refran">Campings San Luis</h1></a> 
+       
+        <nav id="menu">
+          <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="">Campings</a>
+  
+            <ul>
+              <li><a href="potrero.html" target="_blank">Potrero de Los funes</a></li>
+              <li><a href="trapiche.html">Trapiche</a></li>
+            </ul>
+          </li>         
+          <li><a href="form.html" target="_blank">Consultas</a></li>
+          </ul>     
+         </nav>     
+        </div>
+      </header> 
+      <a href="form.html" style="display:scroll;position:fixed;top:50px;right:10px;z-index:999999;">
+      <abbr title="Volver arriba"><img src="img/logo/subir.png" alt="subir" width="40px" height="40px"></abbr> </a>
+    <div class="contenedor-c">
+     <h1 class="centrado">Consultas:</h1>
+     <div id="errores" class="centrado-v">
+          
+     </div>
+
+   <form onsubmit= "return validar()" class="centrado-v">
+     <label for="nom" >Nombre:</label>
+     <input type="text"  name="nombre" id="nombre" placeholder="Ingresa tu nombre"/>
+    
+     <label for="email">Email:</label>
+     <input type="email"  name="email" id="email" placeholder="Ingrese su email"> 
+     <label for="mensaje">Su mensaje:    </label>
+     <textarea name="mensaje"  id="mensaje" rows="10" cols="30" placeholder="Ingrese su mensaje" ></textarea>
+     <input type="submit"value="Enviar"/>
+   </form>
+   <div class="centrado" >
+     <h1 id = "ingresos-h">Usuario y su mensaje</h1>
+     <ul id = "ingresos">
+
+     </ul>
+   </div>
+  </div>
+   <footer>
+    <p>&copy;SanLuisCampings</p>
+    <a href="index.html"><img class="logo" src="img/logo/camping.png" alt=""></a>
+    <div class="red">
+     <a href="https://www.facebook.com/isa.felippo.5" target="_blank"><img   src="img/logo/facebook.png" alt=""></a>
+     <a href="https://wa.me/5492664630359" target="_blank"><img    src="img/logo/Whatsapp.ico" alt=""></a>
+    </div>
+ 
+  </footer>
+       
+  </body>
+</html>
+
